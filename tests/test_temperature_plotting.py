@@ -8,7 +8,7 @@ import temperature_plotting as tpl
 
 
 
-#pytest.mark.skip(reason="test is bad")
+@pytest.mark.skip(reason="test is bad")
 def test_compute_mean_bad():
     calc = tpl.compute_mean([1,2,3])
     assert calc==3
