@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+import math
 import os
 import pytest
 import temperature_plotting as tpl
