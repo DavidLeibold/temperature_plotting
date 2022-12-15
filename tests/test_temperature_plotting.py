@@ -26,8 +26,7 @@ def test_compute_mean():
     assert e is not None, "We should not be able to average strings."
     
     calc = tpl.compute_mean([])
-    print(calc)
-    # assert calc==float('nan')
+    assert calc==float('nan')
 
 
 
