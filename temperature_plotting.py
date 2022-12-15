@@ -11,6 +11,10 @@ def compute_mean(data):
     Returns:
         float: the mean value of the list
     """
+    
+    if len(data)==0:
+        return float('nan')
+    
     mean = sum(data)/ len(data)
     return mean
 
@@ -38,6 +42,7 @@ def create_name(num):
     Returns:
         str: A name for a png file
     """
+    assert type(num) == int, "Input `num` must be an integer value."
     name = f"plot_{str(num)}.png"
     return name
 
